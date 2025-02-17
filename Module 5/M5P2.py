@@ -9,7 +9,7 @@ else:
 # Calculate extended price
 extended_price = quantity * unit_price
 # Display results
-print("\nOrder Details:")
-print(f"Item: {item}")
-print(f"Unit Price: ${unit_price:.2f}")
-print(f"Extended Price: ${extended_price:.2f}")
+print("Order Details:")
+print("Item:{}".format(item))
+print("Unit Price: ${:.2f}".format(unit_price))
+print("Extended Price: ${:.2f}".format(extended_price))
