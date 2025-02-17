@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-15 04:39:29 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLTdVQ09JQ0U7MjAyNS0wMi0xNTswNDowNToyNCBQTTszMzQ2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLTdVQ09JQ0U7MjAyNS0wMi0xNTswNDozOToyOSBQTTsxOzM0NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity, unitPrice, extendedPrice, tax, total" type="Real" array="False" size=""/>
+            <output expression="&quot;enter the quantity&quot;" newline="True"/>
+            <input variable="quantity"/>
+            <if expression="quantity &gt;= 1000">
+                <then>
+                    <assign variable="unitPrice" expression="3.00"/>
+                </then>
+                <else>
+                    <assign variable="unitPrice" expression="5.00"/>
+                </else>
+            </if>
+            <assign variable="extendedPrice" expression="quantity * unitPrice"/>
+            <assign variable="tax" expression="extendedPrice * 0.07"/>
+            <assign variable="total" expression="extendedPrice + tax"/>
+            <output expression="&quot;Quantity:&quot;&amp; ToString (quantity)" newline="True"/>
+            <output expression="&quot;Unit Price:&quot; &amp; ToString (unitPrice)" newline="True"/>
+            <output expression="&quot;Extended Price: $&quot; &amp; ToString(extendedPrice)" newline="True"/>
+            <output expression="&quot;Tax (7%): $&quot; &amp; ToString (tax)" newline="True"/>
+            <output expression="&quot;Total: $&quot; &amp; ToString(total)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
