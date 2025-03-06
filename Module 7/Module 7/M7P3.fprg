@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-02 08:42:29 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLU8wS0xBNkk7MjAyNS0wMi0yNzswOTowMToxNSBBTTszMzEw"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLU8wS0xBNkk7MjAyNS0wMi0yNzswOToxMzo1MSBBTTsyOzM0MjI="/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLVRDVDg0TUI7MjAyNS0wMy0wMjswODo0MjoyOSBQTTsxOzM0NTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastName, continueLoop" type="String" array="False" size=""/>
+            <declare name="count" type="Real" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <declare name="exam1, exam2, average" type="Real" array="False" size=""/>
+            <output expression="&quot;Do you want to enter student data? (yes/no)&quot;" newline="True"/>
+            <input variable="continueLoop"/>
+            <while expression="continueLoop == &quot;yes&quot;">
+                <output expression="&quot;enter last name:&quot;" newline="True"/>
+                <input variable="lastName"/>
+                <output expression="&quot; enter exam 1 score:&quot;" newline="True"/>
+                <input variable="Exam1"/>
+                <output expression="&quot; enter exam 2 score:&quot;" newline="True"/>
+                <input variable="Exam2"/>
+                <assign variable="average" expression="(exam1+ exam2)/2"/>
+                <output expression="&quot;Student:&quot;  &amp;lastName" newline="True"/>
+                <output expression="&quot; average score:&quot;  &amp;average" newline="True"/>
+                <assign variable="count" expression="count+1"/>
+                <output expression="&quot;do you want to enter another student(yes or no):&quot;" newline="True"/>
+                <input variable="continueLoop"/>
+            </while>
+            <output expression="&quot;total number of students entered:&quot; &amp;count" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>
