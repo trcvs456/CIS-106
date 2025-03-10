@@ -1,0 +1,15 @@
+Coffee
+8
+50
+Milk
+5
+10
+Oatmilk
+4
+10
+Almond
+3
+10
+OJ
+5
+11
