@@ -1,0 +1,10 @@
+﻿Smith 0.267
+Johnson 0.300
+Williams 0.245
+Brown 0.280
+Jones 0.310
+Garcia 0.295 
+Miller 0.260
+Davis 0.275 
+Rodriguez 0.290
+Martinez 0.305
